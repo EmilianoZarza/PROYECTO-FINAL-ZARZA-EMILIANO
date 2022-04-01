@@ -7,6 +7,7 @@
 body{
     background-color: #F2F0EB;
     font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 $color:(
@@ -98,21 +99,28 @@ img{
         background-color: map-get($color, "celeste");
         .titulo_uno{
             text-align: center;
-            font-size: 100%;
+            font-family: 'Comforter Brush', cursive;
+            font-size: 250%;
             padding-top: 30px;
         }
         .descripcion_txt{
             text-align: center;
-            font-size: 70%;
-            padding: 100px;
+            font-size: 15px;
+            padding: 30px;
         }
     }
     .img{
         padding: 20px 10px 5px 5px;
         border-radius: 10px;
-        width: 100%;
+        object-fit: cover;
+    }
+    .txt-font{
+        font-family: 'Nanum Pen Script', cursive;
+        text-align: center;
+        font-size: 100%;
     }
 }
+
 
 .fondo_text{
     background-color: map-get($color, "naranja");
@@ -125,17 +133,36 @@ img{
     background-color: map-get($color, "rojo");
 }
 
+.txt_clor{
+    text-decoration: none;
+    color: map-get( $color , "blanco" );
+    &:hover{
+        color: map-get($color , "negro" );
+    }
+}
+
 /*SOBRE MI*/
 
 .foto_carnet{
     width: 200px;
 }
 
-.font_button{
+.btn-color{
+    background-color: map-get($color, "rojo");
     color: map-get($color, "blanco");
-    font-size: 100%;
     margin-bottom: 5%;
+    width: 100%;
 }
+
+.tarjeta{
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    img{
+        object-fit: cover;
+    }
+}
+
 
 /*GALERIA*/
 
