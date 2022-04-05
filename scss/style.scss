@@ -4,6 +4,13 @@
     padding: 0% 5%;
 }
 
+@media screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0% 1%;
+    }
+}
+
 body{
     background-color: #F2F0EB;
     font-family: 'Roboto', sans-serif;
@@ -163,6 +170,15 @@ img{
     }
 }
 
+/*BLOG*/
+
+.frase-blog{
+    background-color: map-get($color, "rojo");
+    text-align: center;
+    margin: 5% 9%;
+    color: map-get($color, "blanco");
+}
+
 
 /*GALERIA*/
 
@@ -183,19 +199,22 @@ img{
     color: map-get($color, "blanco");
 }
 
-.frase-blog{
-    background-color: map-get($color, "rojo");
-    text-align: center;
-    margin: 5% 9%;
-    color: map-get($color, "blanco");
-}
+
+
+/*CONTACTO*/
+
 .formulario{
     background-color: map-get($color, "celeste");
     margin: 5% 9.5%;
     padding: 30px;
+    .btn_enviar{
+        text-align: center;
+        justify-content: center;
+    }
 }
 
 /*FOOTER*/
+
 footer {
     height: 100%;
     width: 100%;
@@ -231,7 +250,6 @@ footer {
         pointer-events: none;
         transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
-
 }
 
 .wrapper .tooltip::before {
