@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0% 5%; }
 
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0% 1%; } }
+
 body {
   background-color: #F2F0EB;
   font-family: 'Roboto', sans-serif;
@@ -126,6 +131,13 @@ img {
   .tarjeta img {
     object-fit: cover; }
 
+/*BLOG*/
+.frase-blog {
+  background-color: #A63C3C;
+  text-align: center;
+  margin: 5% 9%;
+  color: #F2F0EB; }
+
 /*GALERIA*/
 .conteiner .row img {
   border-radius: 5px;
@@ -138,16 +150,14 @@ img {
   margin: 5% 9%;
   color: #F2F0EB; }
 
-.frase-blog {
-  background-color: #A63C3C;
-  text-align: center;
-  margin: 5% 9%;
-  color: #F2F0EB; }
-
+/*CONTACTO*/
 .formulario {
   background-color: #91D7F2;
   margin: 5% 9.5%;
   padding: 30px; }
+  .formulario .btn_enviar {
+    text-align: center;
+    justify-content: center; }
 
 /*FOOTER*/
 footer {
